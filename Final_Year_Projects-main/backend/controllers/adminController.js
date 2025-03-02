@@ -10,7 +10,7 @@ const registerAdmin = async (req, res) => {
   console.log("After body");
 
   try {
-    // Check if admin already exists
+    
     console.log("IN try catch block")
     const existingAdmin = await Admin.findOne({ email });
     if (existingAdmin) {
